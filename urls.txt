@@ -1,0 +1,5 @@
+http://stackoverflow.com/questions/33474534/c-gmock-invoke-other-function-with-same-args
+
+http://stackoverflow.com/questions/22374780/how-to-use-google-test-to-test-a-function-which-will-call-another-function-conta
+
+http://stackoverflow.com/questions/10767131/expecting-googlemock-calls-from-another-thread
