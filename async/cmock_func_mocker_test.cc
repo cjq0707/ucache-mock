@@ -24,9 +24,12 @@ TEST(FunctionMockersTest, TestCb)
 	{
 		FooFunctionMock mock;
 		callback cb = cb_stub;
-		EXPECT_FUNCTION_CALL(mock, (cb_real)).WillOnce(Invoke(foo_stub));
+		EXPECT_FUNCTION_CALL(mock, (_)).WillOnce(DoAll(InvokeArgument<0>(), Return(0)));
 		ASSERT_EQ(0, foo(cb_real));
 	}
 
 	ASSERT_EQ(1, foo(cb_real));
 }
+
+
+//example
